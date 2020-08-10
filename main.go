@@ -26,7 +26,7 @@ func main() {
 			fmt.Println(err)
 			os.Exit(1)
 		}
-		var sheet_name = xlsx.GetSheetName(xlsx.GetActiveSheetIndex())
+		var sheetName = xlsx.GetSheetName(xlsx.GetActiveSheetIndex())
 		rows, _ := xlsx.GetRows(sheet_name)
 		list := make(map[int]map[int]string)
 		i := 0
