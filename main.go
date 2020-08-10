@@ -27,7 +27,7 @@ func main() {
 			os.Exit(1)
 		}
 		var sheetName = xlsx.GetSheetName(xlsx.GetActiveSheetIndex())
-		rows, _ := xlsx.GetRows(sheet_name)
+		rows, _ := xlsx.GetRows(sheetName)
 		list := make(map[int]map[int]string)
 		i := 0
 		for _, row := range rows {
